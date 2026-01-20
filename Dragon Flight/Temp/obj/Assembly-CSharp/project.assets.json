@@ -1,11 +1,117 @@
 {
   "version": 3,
   "targets": {
-    ".NETStandard,Version=v2.1": {}
+    ".NETStandard,Version=v2.1": {
+      "CFXR.WelcomeScreen/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/CFXR.WelcomeScreen.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CFXR.WelcomeScreen.dll": {}
+        }
+      },
+      "CFXRDemo/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "CFXRRuntime": "1.0.0",
+          "KinoBloom.Runtime": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CFXRDemo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CFXRDemo.dll": {}
+        }
+      },
+      "CFXREditor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/CFXREditor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CFXREditor.dll": {}
+        }
+      },
+      "CFXRRuntime/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/CFXRRuntime.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CFXRRuntime.dll": {}
+        }
+      },
+      "KinoBloom.Runtime/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/KinoBloom.Runtime.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KinoBloom.Runtime.dll": {}
+        }
+      },
+      "ToonyColorsPro.Demo.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "KinoBloom.Runtime": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ToonyColorsPro.Demo.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ToonyColorsPro.Demo.Editor.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CFXR.WelcomeScreen/1.0.0": {
+      "type": "project",
+      "path": "CFXR.WelcomeScreen.csproj",
+      "msbuildProject": "CFXR.WelcomeScreen.csproj"
+    },
+    "CFXRDemo/1.0.0": {
+      "type": "project",
+      "path": "CFXRDemo.csproj",
+      "msbuildProject": "CFXRDemo.csproj"
+    },
+    "CFXREditor/1.0.0": {
+      "type": "project",
+      "path": "CFXREditor.csproj",
+      "msbuildProject": "CFXREditor.csproj"
+    },
+    "CFXRRuntime/1.0.0": {
+      "type": "project",
+      "path": "CFXRRuntime.csproj",
+      "msbuildProject": "CFXRRuntime.csproj"
+    },
+    "KinoBloom.Runtime/1.0.0": {
+      "type": "project",
+      "path": "KinoBloom.Runtime.csproj",
+      "msbuildProject": "KinoBloom.Runtime.csproj"
+    },
+    "ToonyColorsPro.Demo.Editor/1.0.0": {
+      "type": "project",
+      "path": "ToonyColorsPro.Demo.Editor.csproj",
+      "msbuildProject": "ToonyColorsPro.Demo.Editor.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": []
+    ".NETStandard,Version=v2.1": [
+      "CFXR.WelcomeScreen >= 1.0.0",
+      "CFXRDemo >= 1.0.0",
+      "CFXREditor >= 1.0.0",
+      "CFXRRuntime >= 1.0.0",
+      "KinoBloom.Runtime >= 1.0.0",
+      "ToonyColorsPro.Demo.Editor >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/seokgyuhwan/.nuget/packages/": {}
@@ -31,7 +137,26 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/seokgyuhwan/lion7/dragonflight7/Dragon Flight/CFXR.WelcomeScreen.csproj": {
+              "projectPath": "/Users/seokgyuhwan/lion7/dragonflight7/Dragon Flight/CFXR.WelcomeScreen.csproj"
+            },
+            "/Users/seokgyuhwan/lion7/dragonflight7/Dragon Flight/CFXRDemo.csproj": {
+              "projectPath": "/Users/seokgyuhwan/lion7/dragonflight7/Dragon Flight/CFXRDemo.csproj"
+            },
+            "/Users/seokgyuhwan/lion7/dragonflight7/Dragon Flight/CFXREditor.csproj": {
+              "projectPath": "/Users/seokgyuhwan/lion7/dragonflight7/Dragon Flight/CFXREditor.csproj"
+            },
+            "/Users/seokgyuhwan/lion7/dragonflight7/Dragon Flight/CFXRRuntime.csproj": {
+              "projectPath": "/Users/seokgyuhwan/lion7/dragonflight7/Dragon Flight/CFXRRuntime.csproj"
+            },
+            "/Users/seokgyuhwan/lion7/dragonflight7/Dragon Flight/KinoBloom.Runtime.csproj": {
+              "projectPath": "/Users/seokgyuhwan/lion7/dragonflight7/Dragon Flight/KinoBloom.Runtime.csproj"
+            },
+            "/Users/seokgyuhwan/lion7/dragonflight7/Dragon Flight/ToonyColorsPro.Demo.Editor.csproj": {
+              "projectPath": "/Users/seokgyuhwan/lion7/dragonflight7/Dragon Flight/ToonyColorsPro.Demo.Editor.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
