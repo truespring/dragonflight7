@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SpwanManager : MonoBehaviour
 {
-    public bool enableSpwan = false;
+    public bool enableSpwan = true;
     public GameObject enemy;
     public float spawnDelay = 1f;
     public float spawnInterval = 0.5f;

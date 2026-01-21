@@ -4,6 +4,7 @@ public class Enemy : MonoBehaviour
 {
     public float moveSpeed = 1.3f;
     public GameObject effect;
+    public int scoreValue = 100;
 
     void Start()
     {
@@ -25,11 +26,14 @@ public class Enemy : MonoBehaviour
             GameObject go = Instantiate(effect, transform.position, Quaternion.identity);
             Destroy(go, 1);
 
+            SoundManager.instance.SoundDie();
+
+            GameManager.instance.AddScore(scoreValue);
+
             // destroy both
             Destroy(collision.gameObject);
             Destroy(gameObject);
 
-            SoundManager.instance.SoundDie();
         }
 
     }
