@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float moveSpeed = 1.0f;
+    public float moveSpeed = 2.0f;
 
     void Start()
     {

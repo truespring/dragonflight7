@@ -469,6 +469,8 @@
 "Assets/Script/SingletonTest.cs"
 "Assets/Script/SoundManager.cs"
 "Assets/Script/SpwanManager.cs"
+"Assets/Script/StartingText.cs"
+"Assets/Script/Test/CoroutineTest.cs"
 -langversion:9.0
 /deterministic
 /optimize+

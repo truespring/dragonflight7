@@ -7,7 +7,7 @@ public class Launcher : MonoBehaviour
     void Start()
     {
         // function name, delay time, repeat time
-        InvokeRepeating("Shoot", 0.5f, 1f);
+        InvokeRepeating("Shoot", 0.5f, 0.3f);
     }
 
     void Shoot()
